@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* Slick Carousel Custom Styles */
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+  font-size: 10px;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: var(--cr-primary);
+}
+
+.slick-prev {
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  
+  /* Cross River State Official Blue & White Color Scheme */
+  --cr-primary: #003366;      /* Deep Blue - Official primary color */
+  --cr-primary-light: #004d7a; /* Lighter blue for hover states */
+  --cr-primary-dark: #002244;  /* Darker blue for text */
+  --cr-secondary: #ffffff;     /* Pure white */
+  --cr-accent: #0066cc;        /* Bright blue for accents */
+  --cr-light-blue: #e6f3ff;    /* Very light blue for backgrounds */
+  --cr-text-dark: #1a1a1a;     /* Dark text */
+  --cr-text-light: #666666;    /* Light text */
+  --cr-border: #e0e0e0;        /* Light border */
+}
+
+/* Font and color variables */
+:root {
+  --font-sans: 'Open Sans', system-ui, sans-serif;
+  --font-display: 'Poppins', system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Open Sans', system-ui, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cr-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cr-primary-light);
+}
+
+/* Cross River State Official Blue & White Branding */
+.bg-cr-primary {
+  background-color: var(--cr-primary);
+}
+
+.bg-cr-primary-light {
+  background-color: var(--cr-primary-light);
+}
+
+.bg-cr-secondary {
+  background-color: var(--cr-secondary);
+}
+
+.bg-cr-accent {
+  background-color: var(--cr-accent);
+}
+
+.bg-cr-light {
+  background-color: var(--cr-light-blue);
+}
+
+.text-cr-primary {
+  color: var(--cr-primary);
+}
+
+.text-cr-primary-dark {
+  color: var(--cr-primary-dark);
+}
+
+.text-cr-secondary {
+  color: var(--cr-secondary);
+}
+
+.text-cr-accent {
+  color: var(--cr-accent);
+}
+
+.text-cr-dark {
+  color: var(--cr-text-dark);
+}
+
+.text-cr-light {
+  color: var(--cr-text-light);
+}
+
+.border-cr-primary {
+  border-color: var(--cr-primary);
+}
+
+.border-cr-light {
+  border-color: var(--cr-border);
+}
+
+.hover\:bg-cr-primary-light:hover {
+  background-color: var(--cr-primary-light);
+}
+
+.hover\:text-cr-accent:hover {
+  color: var(--cr-accent);
+}
+
+/* Opacity variations */
+.bg-cr-secondary\/10 {
+  background-color: color-mix(in srgb, var(--cr-secondary) 10%, transparent);
+}
+
+.bg-cr-secondary\/15 {
+  background-color: color-mix(in srgb, var(--cr-secondary) 15%, transparent);
+}
+
+.bg-cr-secondary\/20 {
+  background-color: color-mix(in srgb, var(--cr-secondary) 20%, transparent);
+}
+
+.bg-cr-secondary\/30 {
+  background-color: color-mix(in srgb, var(--cr-secondary) 30%, transparent);
+}
+
+.bg-cr-accent\/20 {
+  background-color: color-mix(in srgb, var(--cr-accent) 20%, transparent);
+}
+
+.border-cr-secondary\/20 {
+  border-color: color-mix(in srgb, var(--cr-secondary) 20%, transparent);
+}
+
+.border-cr-secondary\/30 {
+  border-color: color-mix(in srgb, var(--cr-secondary) 30%, transparent);
+}
+
+.font-display {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* Hero section gradient - official blue theme */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--cr-primary) 0%, var(--cr-primary-light) 100%);
+}
+
+/* Hero background image styles */
+.hero-bg-scenic {
+  background-image: url('/obudu-mountain.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-bg-waterfall {
+  background-image: url('/agbokim-waterfalls.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-bg-cultural {
+  background-image: url('/calabar-carnival.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-bg-overlay {
+  background: linear-gradient(135deg, rgba(0, 51, 102, 0.8) 0%, rgba(0, 77, 122, 0.6) 100%);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-cr {
+  background: linear-gradient(135deg, var(--cr-light-blue) 0%, var(--cr-accent) 100%);
+}
+
+/* Primary gradient - for events section */
+.bg-gradient-to-r.from-cr-primary.to-cr-primary-light {
+  background: linear-gradient(to right, var(--cr-primary) 0%, var(--cr-primary-light) 100%);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 51, 102, 0.1), 0 10px 10px -5px rgba(0, 51, 102, 0.04);
+}
